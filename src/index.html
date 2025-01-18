@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ------flowbite------ -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="output.css" />
     <title>Azzle</title>
   </head>
@@ -25,7 +30,207 @@
     <section class="tasks"></section>
     <section class="cost"></section>
     <!------------INFOMATION----------->
-    <section class="infomation"></section>
+    <section class="infomation pb-20 pt-20">
+      <div class="container max-w-[1332px] mx-auto">
+        <div class="flex">
+          <div class="w-1/2">
+            <div>
+              <h2 class="pb-6 text-[80px] leading-[80px] font-bold font-dmsans">
+                Freely ask us for more information
+              </h2>
+              <p class="font-inter text-[21px] mb-12 text-[#191919]">
+                Our AI SaaS solutions can be quickly deployed, enabling users to
+                start benefiting from AI capabilities without lengthy setup and
+                development times in fast-paced industries.
+              </p>
+              <a
+                class="bg-black text-lg py-4 px-6 text-white text-[16px] rounded-[50px] font-bold"
+                href="#"
+                >Ask you questions</a
+              >
+            </div>
+          </div>
+          <div class="w-1/2 pl-[80px]">
+            <div
+              id="accordion-flush"
+              data-accordion="collapse"
+              data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+              data-inactive-classes="text-gray-500 dark:text-gray-400"
+            >
+              <h2 id="accordion-flush-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between text-[28px] text-black font-dmsans font-bold w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                  data-accordion-target="#accordion-flush-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-flush-body-1"
+                >
+                  <span>How do I start AI SaaS?</span>
+                  <svg
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4.99756V20.9976M20 12.9976L4 12.9976"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-flush-body-1"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-1"
+              >
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is an open-source library of interactive components
+                    built on top of Tailwind CSS including buttons, dropdowns,
+                    modals, navbars, and more.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out this guide to learn how to
+                    <a
+                      href="/docs/getting-started/introduction/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >get started</a
+                    >
+                    and start developing websites even faster with components on
+                    top of Tailwind CSS.
+                  </p>
+                </div>
+              </div>
+              <h2 id="accordion-flush-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                  data-accordion-target="#accordion-flush-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-2"
+                >
+                  <span>Is there a Figma file available?</span>
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-flush-body-2"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-2"
+              >
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Flowbite is first conceptualized and designed using the
+                    Figma software so everything you see in the library has a
+                    design equivalent in our Figma file.
+                  </p>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    Check out the
+                    <a
+                      href="https://flowbite.com/figma/"
+                      class="text-blue-600 dark:text-blue-500 hover:underline"
+                      >Figma design system</a
+                    >
+                    based on the utility classes from Tailwind CSS and
+                    components from Flowbite.
+                  </p>
+                </div>
+              </div>
+              <h2 id="accordion-flush-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                  data-accordion-target="#accordion-flush-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-3"
+                >
+                  <span
+                    >What are the differences between Flowbite and Tailwind
+                    UI?</span
+                  >
+                  <svg
+                    data-accordion-icon
+                    class="w-3 h-3 rotate-180 shrink-0"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5 5 1 1 5"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id="accordion-flush-body-3"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-3"
+              >
+                <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    The main difference is that the core components from
+                    Flowbite are open source under the MIT license, whereas
+                    Tailwind UI is a paid product. Another difference is that
+                    Flowbite relies on smaller and standalone components,
+                    whereas Tailwind UI offers sections of pages.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    However, we actually recommend using both Flowbite, Flowbite
+                    Pro, and even Tailwind UI as there is no technical reason
+                    stopping you from using the best of two worlds.
+                  </p>
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Learn more about these technologies:
+                  </p>
+                  <ul class="ps-5 text-gray-500 list-disc dark:text-gray-400">
+                    <li>
+                      <a
+                        href="https://flowbite.com/pro/"
+                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                        >Flowbite Pro</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://tailwindui.com/"
+                        rel="nofollow"
+                        class="text-blue-600 dark:text-blue-500 hover:underline"
+                        >Tailwind UI</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="feedback"></section>
     <footer></footer>
 
@@ -36,5 +241,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- ------flowbite------ -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>
 </html>
