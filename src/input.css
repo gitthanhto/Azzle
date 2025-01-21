@@ -3,3 +3,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  overflow: hidden;
+  transition-property: all;
+  /* transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-duration: 300ms;
+}
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transform-origin: top right;
+  opacity: 1;
+  transition-duration: 300ms;
+  background-color: #fe330a;
+  transform: scaleY(0);
+}
+.button:hover::after {
+  transform: scaleY(1);
+}
+.orange-gradient-1 {
+  background: radial-gradient(50% 50% at 50% 50%, #ff9933 0%, #fe330a 100%);
+  filter: blur(55px);
+}
+.orange-gradient-2 {
+  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+  filter: blur(55px);
+}
+
+.text-slider {
+  animation: slide-right-to-left 10s linear infinite normal forwards;
+}
+@keyframes slide-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
