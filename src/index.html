@@ -1,501 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ------font awesome------ -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- ------flowbite------ -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="output.css" />
-    <title>Azzle</title>
-  </head>
-  <body>
-    <!------------MENU----------->
-    <header></header>
-    <section class="hero-banner"></section>
-    <section class="carousel"></section>
-    <section class="card-features"></section>
-    <!------------SOLUTIONS----------->
-    <section class="solutions"></section>
-    <section class="tasks"></section>
-    <section class="cost"></section>
-    <!------------INFOMATION----------->
-    <section class="infomation 2xl:py-[150px]">
-      <div class="container max-w-[1332px] mx-auto">
-        <div
-          class="flex flex-col py-10 px-5 gap-5 2xl:p-0 md:flex-row md:py-[80px]"
-        >
-          <div class="w-full md:w-1/2">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ------font awesome------ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ------flowbite------ -->
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="output.css" />
+  <title>Azzle</title>
+</head>
+
+<body>
+  <!------------MENU----------->
+  <header></header>
+  <section class="hero-banner"></section>
+  <section class="carousel"></section>
+  <section class="card-features"></section>
+  <!------------SOLUTIONS----------->
+  <section class="solutions"></section>
+  <section class="tasks"></section>
+  <section class="cost"></section>
+  <!------------INFOMATION----------->
+  <section class="infomation 2xl:py-[150px]">
+    <div class="container max-w-[1332px] mx-auto">
+      <div class="flex flex-col py-10 px-5 gap-5 2xl:p-0 md:flex-row md:py-[80px]">
+        <div class="w-full md:w-1/2">
+          <div>
+            <h2 class="pb-6 text-4xl md:text-5xl xl:text-[80px] xl:leading-[80px] font-bold font-dmsans">
+              Freely ask us for more information
+            </h2>
+            <p class="font-inter text-xl xl:text-[21px] mb-12 text-[#191919]">
+              Our AI SaaS solutions can be quickly deployed, enabling users to
+              start benefiting from AI capabilities without lengthy setup and
+              development times in fast-paced industries.
+            </p>
+            <a class="button border-black bg-black text-lg py-4 px-6 text-white text-[16px] rounded-[50px] font-bold hover:text-white"
+              href="#">Ask you questions</a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 md:pl-[40px] xl:pl-[120px]">
+          <div id="accordion-flush" data-accordion="collapse"
+            data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+            data-inactive-classes="text-gray-500 dark:text-gray-400">
+            <h2 id="accordion-flush-heading-1">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
+                aria-controls="accordion-flush-body-1" alwaysOpen="true">
+                <span class="text-xl lg:text-2xl xl:text-[28px] text-black font-dmsans font-bold">How do I start AI
+                  SaaS?</span>
+                <div class="according-icon">
+                  <img src="./img/plus.svg" />
+                </div>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+              <div
+                class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter">
+                <p>
+                  Go to the our official website and require users to create
+                  an account. You'll need to provide some basic information
+                  and agree to our terms and conditions.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-flush-heading-2">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-2" aria-expanded="false"
+                aria-controls="accordion-flush-body-2">
+                <span class="text-xl text-left xl:text-[28px] text-black font-dmsans font-bold">Can I customize AI SaaS
+                  solutions?</span>
+                <div class="according-icon">
+                  <img src="./img/plus.svg" />
+                </div>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+              <div
+                class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter">
+                <p>
+                  Go to the our official website and require users to create
+                  an account. You'll need to provide some basic information
+                  and agree to our terms and conditions.
+                </p>
+              </div>
+            </div>
+            <h2 id="accordion-flush-heading-3">
+              <button type="button"
+                class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
+                data-accordion-target="#accordion-flush-body-3" aria-expanded="false"
+                aria-controls="accordion-flush-body-3">
+                <span class="text-xl xl:text-[28px] text-left text-black font-dmsans font-bold">How can AI benefit my
+                  business?</span>
+                <div class="according-icon">
+                  <img src="./img/plus.svg" />
+                </div>
+              </button>
+            </h2>
+            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+              <div
+                class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter">
+                <p>
+                  Go to the our official website and require users to create
+                  an account. You'll need to provide some basic information
+                  and agree to our terms and conditions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feedback py-20 xl:py-[130px] bg-black">
+    <div class="container max-w-[1332px] mx-auto text-white text-center">
+      <div class="max-w-[300px] md:max-w-[600px] xl:max-w-[680px] mx-auto font-bold lg:leading-[80px]">
+        <h2 class="text-4xl md:text-6xl xl:text-[80px] font-dmsans">
+          Positive feedback from our users
+        </h2>
+      </div>
+      <div
+        class="feedback-container px-5 grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center mt-10 lg:mt-20">
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
             <div>
-              <h2
-                class="pb-6 text-4xl md:text-5xl xl:text-[80px] xl:leading-[80px] font-bold font-dmsans"
-              >
-                Freely ask us for more information
-              </h2>
-              <p class="font-inter text-xl xl:text-[21px] mb-12 text-[#191919]">
-                Our AI SaaS solutions can be quickly deployed, enabling users to
-                start benefiting from AI capabilities without lengthy setup and
-                development times in fast-paced industries.
-              </p>
-              <a
-                class="button border-black bg-black text-lg py-4 px-6 text-white text-[16px] rounded-[50px] font-bold hover:text-white"
-                href="#"
-                >Ask you questions</a
-              >
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-1.jpg" />
+              </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">Max Weber</h3>
+                <p class="text-[14px] font-inter">HR Manager</p>
+              </div>
             </div>
           </div>
-          <div class="w-full md:w-1/2 md:pl-[40px] xl:pl-[120px]">
-            <div
-              id="accordion-flush"
-              data-accordion="collapse"
-              data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
-              data-inactive-classes="text-gray-500 dark:text-gray-400"
-            >
-              <h2 id="accordion-flush-heading-1">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                  data-accordion-target="#accordion-flush-body-1"
-                  aria-expanded="true"
-                  aria-controls="accordion-flush-body-1"
-                  alwaysOpen="true"
-                >
-                  <span
-                    class="text-xl lg:text-2xl xl:text-[28px] text-black font-dmsans font-bold"
-                    >How do I start AI SaaS?</span
-                  >
-                  <div class="according-icon">
-                    <img src="./img/plus.svg" />
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="accordion-flush-body-1"
-                class="hidden"
-                aria-labelledby="accordion-flush-heading-1"
-              >
-                <div
-                  class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter"
-                >
-                  <p>
-                    Go to the our official website and require users to create
-                    an account. You'll need to provide some basic information
-                    and agree to our terms and conditions.
-                  </p>
-                </div>
+        </div>
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
+            <div>
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-2.jpg" />
               </div>
-              <h2 id="accordion-flush-heading-2">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                  data-accordion-target="#accordion-flush-body-2"
-                  aria-expanded="false"
-                  aria-controls="accordion-flush-body-2"
-                >
-                  <span
-                    class="text-xl text-left xl:text-[28px] text-black font-dmsans font-bold"
-                    >Can I customize AI SaaS solutions?</span
-                  >
-                  <div class="according-icon">
-                    <img src="./img/plus.svg" />
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="accordion-flush-body-2"
-                class="hidden"
-                aria-labelledby="accordion-flush-heading-2"
-              >
-                <div
-                  class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter"
-                >
-                  <p>
-                    Go to the our official website and require users to create
-                    an account. You'll need to provide some basic information
-                    and agree to our terms and conditions.
-                  </p>
-                </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">
+                  Douglas Smith
+                </h3>
+                <p class="text-[14px] font-inter">Businessman</p>
               </div>
-              <h2 id="accordion-flush-heading-3">
-                <button
-                  type="button"
-                  class="flex items-center justify-between w-full py-5 rtl:text-right border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3"
-                  data-accordion-target="#accordion-flush-body-3"
-                  aria-expanded="false"
-                  aria-controls="accordion-flush-body-3"
-                >
-                  <span
-                    class="text-xl xl:text-[28px] text-left text-black font-dmsans font-bold"
-                    >How can AI benefit my business?</span
-                  >
-                  <div class="according-icon">
-                    <img src="./img/plus.svg" />
-                  </div>
-                </button>
-              </h2>
-              <div
-                id="accordion-flush-body-3"
-                class="hidden"
-                aria-labelledby="accordion-flush-heading-3"
-              >
-                <div
-                  class="py-5 border-b border-gray-200 dark:border-gray-700 text-[18px] text-[#2c2c2c] text-opacity-90 font-inter"
-                >
-                  <p>
-                    Go to the our official website and require users to create
-                    an account. You'll need to provide some basic information
-                    and agree to our terms and conditions.
-                  </p>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
+            <div>
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-3.jpg" />
+              </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">
+                  Abraham Maslo
+                </h3>
+                <p class="text-[14px] font-inter">
+                  Founder @ Marketing Company
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
+            <div>
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-4.jpg" />
+              </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">Jack Fayol</h3>
+                <p class="text-[14px] font-inter">HR Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
+            <div>
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-5.jpg" />
+              </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">Karen Lynn</h3>
+                <p class="text-[14px] font-inter">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]">
+          <div class="flex flex-col gap-y-8 text-left">
+            <div>
+              <img src="./img/rating.svg" />
+            </div>
+            <p class="text-[18px] font-inter">
+              “This AI SaaS tool has revolutionized the way we process and
+              analyze data. This is a game-changer for our business.”
+            </p>
+            <div class="flex items-center">
+              <div>
+                <img class="rounded-full" src="./img/testimonial-img-6.jpg" />
+              </div>
+              <div class="ml-4">
+                <h3 class="text-[18px] font-bold font-inter">Henry Ochi</h3>
+                <p class="text-[14px] font-inter">Bank Manager</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="feedback py-20 xl:py-[130px] bg-black">
-      <div class="container max-w-[1332px] mx-auto text-white text-center">
-        <div
-          class="max-w-[300px] md:max-w-[600px] xl:max-w-[680px] mx-auto font-bold lg:leading-[80px]"
-        >
-          <h2 class="text-4xl md:text-6xl xl:text-[80px] font-dmsans">
-            Positive feedback from our users
-          </h2>
-        </div>
-        <div
-          class="feedback-container px-5 grid grid-flow-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center items-center mt-10 lg:mt-20"
-        >
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-1.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">Max Weber</h3>
-                  <p class="text-[14px] font-inter">HR Manager</p>
-                </div>
-              </div>
-            </div>
+    </div>
+  </section>
+  <footer class="relative z-[1] overflow-hidden bg-[#EFEAE3]">
+    <div class="py-10 lg:py-18 xl:py-[100px] rounded-t-[50px]">
+      <div class="overflow-hidden">
+        <div class="text-slider flex items-center w-full whitespace-nowrap gap-x-[30px]">
+          <img src="./img/footer-text-slider-icon.svg" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+          <div class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]">
+            Start building software
           </div>
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-2.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">
-                    Douglas Smith
-                  </h3>
-                  <p class="text-[14px] font-inter">Businessman</p>
-                </div>
-              </div>
-            </div>
+          <img src="./img/footer-text-slider-icon.svg" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+          <div class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]">
+            Start building software
           </div>
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-3.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">
-                    Abraham Maslo
-                  </h3>
-                  <p class="text-[14px] font-inter">
-                    Founder @ Marketing Company
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-4.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">Jack Fayol</h3>
-                  <p class="text-[14px] font-inter">HR Manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-5.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">Karen Lynn</h3>
-                  <p class="text-[14px] font-inter">Software Engineer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="p-7 border-[1px] border-gray-300 border-opacity-15 rounded-[10px]"
-          >
-            <div class="flex flex-col gap-y-8 text-left">
-              <div>
-                <img src="./img/rating.svg" />
-              </div>
-              <p class="text-[18px] font-inter">
-                “This AI SaaS tool has revolutionized the way we process and
-                analyze data. This is a game-changer for our business.”
-              </p>
-              <div class="flex items-center">
-                <div>
-                  <img class="rounded-full" src="./img/testimonial-img-6.jpg" />
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-[18px] font-bold font-inter">Henry Ochi</h3>
-                  <p class="text-[14px] font-inter">Bank Manager</p>
-                </div>
-              </div>
-            </div>
+          <img src="./img/footer-text-slider-icon.svg" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+          <div class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]">
+            Start building software
           </div>
         </div>
       </div>
-    </section>
-    <footer class="bg-black relative z-10 overflow-hidden">
-      <div class="bg-[#EFEAE3] rounded-t-[50px]">
-        <div class="py-10 lg:py-18 xl:py-[100px]">
-          <div class="overflow-hidden">
-            <div
-              class="text-slider flex items-center w-full whitespace-nowrap gap-x-[30px]"
-            >
-              <img
-                src="./img/footer-text-slider-icon.svg"
-                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
-              />
-              <div
-                class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]"
-              >
-                Start building software
-              </div>
-              <img
-                src="./img/footer-text-slider-icon.svg"
-                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
-              />
-              <div
-                class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]"
-              >
-                Start building software
-              </div>
-              <img
-                src="./img/footer-text-slider-icon.svg"
-                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
-              />
-              <div
-                class="text-4xl lg:text-6xl xl:text-[80px] font-dmsans font-bold tracking-[2px]"
-              >
-                Start building software
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="container max-w-[1332px] mx-auto border-y-2 border-black border-opacity-5"
-        >
-          <div
-            class="px-5 2xl:px-0 grid gap-10 py-[60px] xl:gap-20 xl:py-[100px] grid-cols-1 md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr]"
-          >
-            <div class="flex flex-col gap-y-6">
-              <a href="#"
-                ><img class="inline-block w-24" src="./img/logo.png" alt=""
-              /></a>
-              <p class="text-[19px] font-inter text-[#191919] leading-8">
-                Our mission is to harness the power of AI to solve complex
-                business challenges & decision-makers with data-driven insights
-                and enhance user experiences across digital platforms.
-              </p>
-              <p class="text-[18px] text-[#191919] font-inter">
-                Website: <a href="#">www.example.com</a>
-              </p>
-            </div>
-            <div class="flex flex-col gap-y-6">
-              <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
-                Primary Pages
-              </h3>
-              <ul
-                class="flex flex-col gap-y-[10px] font-inter text-[18px] text-[#191919]"
-              >
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >About us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Pricing</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-y-6">
-              <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
-                Primary Pages
-              </h3>
-              <ul
-                class="flex flex-col gap-y-[10px] font-inter text-[18px] text-[#191919]"
-              >
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Signup</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Login</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >404 Not Found</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="transition-all ease-linear duration-300 hover:text-orange-300"
-                    href="#"
-                    >Password Reset</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-y-6">
-              <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
-                Subscribe to our newsletter
-              </h3>
-              <div class="relative h-[50px] max-w-[300px]">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
-                  required
-                />
-                <button
-                  type="submit"
-                  class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
-                >
-                  <img src="./img/arrow-right-large.svg" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex items-center justify-center py-10">
-          <p class="text-[#191919] text-[18px] font-inter">
-            &copy; Copyright 2025, All Rights Reserved by Thanh To
+    </div>
+    <div class="container max-w-[1332px] mx-auto border-y-2 border-black border-opacity-5">
+      <div
+        class="px-5 2xl:px-0 grid gap-10 py-[60px] xl:gap-20 xl:py-[100px] grid-cols-1 md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr]">
+        <div class="flex flex-col gap-y-6">
+          <a href="#"><img class="inline-block w-24" src="./img/logo.png" alt="" /></a>
+          <p class="text-[19px] font-inter text-[#191919] leading-8">
+            Our mission is to harness the power of AI to solve complex
+            business challenges & decision-makers with data-driven insights
+            and enhance user experiences across digital platforms.
+          </p>
+          <p class="text-[18px] text-[#191919] font-inter">
+            Website: <a href="#">www.example.com</a>
           </p>
         </div>
+        <div class="flex flex-col gap-y-6">
+          <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
+            Primary Pages
+          </h3>
+          <ul class="flex flex-col gap-y-[10px] font-inter text-[18px] text-[#191919]">
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Home</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">About us</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Services</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-y-6">
+          <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
+            Primary Pages
+          </h3>
+          <ul class="flex flex-col gap-y-[10px] font-inter text-[18px] text-[#191919]">
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Signup</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Login</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">404 Not Found</a>
+            </li>
+            <li>
+              <a class="transition-all ease-linear duration-300 hover:text-orange-300" href="#">Password Reset</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-y-6">
+          <h3 class="text-[21px] text-[#000000] font-dmsans font-bold">
+            Subscribe to our newsletter
+          </h3>
+          <div class="relative h-[50px] max-w-[300px]">
+            <input type="email" placeholder="Enter your email"
+              class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+              required />
+            <button type="submit"
+              class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
+              <img src="./img/arrow-right-large.svg" />
+            </button>
+          </div>
+        </div>
       </div>
-      <div
-        class="orange-gradient-2 absolute -top-[290px] right-[90px] z-10 h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]"
-      ></div>
-      <div
-        class="orange-gradient-1 absolute -right-[200px] -top-[205px] z-10 h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]"
-      ></div>
-    </footer>
+    </div>
+    <div class="flex items-center justify-center py-10">
+      <p class="text-[#191919] text-[18px] font-inter">
+        &copy; Copyright 2025, All Rights Reserved by Thanh To
+      </p>
+    </div>
+    <div
+      class="orange-gradient-2 absolute -top-[290px] right-[90px] z-10 h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
+    </div>
+    <div
+      class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
+    </div>
+  </footer>
 
-    <!-- -------jquery 3.7.1------- -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- ------flowbite------ -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-  </body>
+  <!-- -------jquery 3.7.1------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ------flowbite------ -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
 </html>
