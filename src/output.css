@@ -626,6 +626,10 @@ video {
   top: 50%;
 }
 
+.-top-\[70px\]{
+  top: -70px;
+}
+
 .-z-\[1\]{
   z-index: -1;
 }
@@ -653,6 +657,10 @@ video {
 
 .mt-10{
   margin-top: 2.5rem;
+}
+
+.-mt-\[70px\]{
+  margin-top: -70px;
 }
 
 .inline-block{
@@ -890,11 +898,6 @@ video {
   padding-bottom: 2.5rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -910,12 +913,20 @@ video {
   padding-bottom: 60px;
 }
 
+.pb-40{
+  padding-bottom: 10rem;
+}
+
 .pb-6{
   padding-bottom: 1.5rem;
 }
 
 .pr-20{
   padding-right: 5rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
 }
 
 .text-left{
@@ -1164,6 +1175,11 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1197,13 +1213,21 @@ video {
     padding-bottom: 100px;
   }
 
-  .xl\:py-\[130px\]{
-    padding-top: 130px;
-    padding-bottom: 130px;
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:pb-\[200px\]{
+    padding-bottom: 200px;
   }
 
   .xl\:pl-\[120px\]{
     padding-left: 120px;
+  }
+
+  .xl\:pt-\[130px\]{
+    padding-top: 130px;
   }
 
   .xl\:text-\[21px\]{
