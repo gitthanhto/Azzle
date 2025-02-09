@@ -3,7 +3,139 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* ---------P1-------------- */
 
+.container {
+  margin: 0 auto;
+  padding: 0 auto;
+  max-width: 1332px;
+}
+.padding-section {
+  margin-bottom: 2rem;
+}
+.site-menu-main .drop-trigger {
+  line-height: 30px;
+}
+.nav-item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+ul.site-menu-main .nav-item .dropdown-icon {
+  transform: rotate(90deg);
+  transition: all 0.4s ease-in-out;
+}
+ul.site-menu-main .nav-item:hover .dropdown-icon {
+  transform: rotate(0deg);
+}
+
+.site-menu-main .sub-menu {
+  z-index: 500;
+  background-color: white;
+  position: absolute;
+  margin: 0;
+  padding: 12px 0;
+  transition: 0.4s;
+  z-index: 4;
+  transform: translatey(20px);
+  opacity: 0;
+  visibility: hidden;
+  min-width: 200px;
+  border-radius: 6px;
+}
+li.nav-item-has-children:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+  padding-top: 5x;
+  pointer-events: visible;
+  border-radius: 6px;
+  transform: translateY(0);
+}
+
+.site-menu-main ul {
+  list-style: none;
+  margin-left: 0;
+}
+.site-menu-main .sub-menu:before {
+  position: absolute;
+  content: "";
+  z-index: 8;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid rgb(255, 255, 255);
+}
+.site-menu-main .sub-menu-item {
+  font-size: 15px;
+  font-weight: 600;
+}
+.site-menu-main .sub-menu-item a:hover {
+  color: #fe330a;
+}
+.site-menu-main .sub-menu-item a {
+  transition: 0.4s;
+}
+.site-menu-main .sub-menu-item a {
+  color: inherit;
+  padding: 10px 20px;
+  color: #000;
+}
+.nav-item-has-children a {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.site-menu-main a {
+  text-decoration: none;
+}
+/* menu-children  */
+
+.site-menu-main .sub-menu .sub-menu {
+  top: 0;
+  left: 100%;
+  opacity: 0;
+}
+.site-menu-main .sub-menu:hover .sub-menu {
+  opacity: 1;
+}
+
+/* -------------P2------------- */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: 120px;
+  font-weight: 650;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.hero-content-title .but {
+  margin-bottom: 4rem;
+}
+.hero-img .img-content {
+  padding: 20px 0;
+}
+/* ---------P4_Cord-features------- */
+@media (min-width: 992px) {
+  .site-menu-main {
+    column-gap: 30px;
+    flex-direction: row;
+  }
+}
+@media (width > 1200px) {
+  .site-menu-main {
+    column-gap: 50px;
+  }
+}
+
+/* --------------------------------  */
 .button {
   position: relative;
   z-index: 1;
